@@ -14,17 +14,12 @@
 class OperatingSystem
 {
 public:
-    
-    static OperatingSystem* createInstance();
-    static OperatingSystem* instance_;
-    
+    OperatingSystem();
     void addTask(const Task& task);
     
     void run();
 
 private:
-    OperatingSystem();
-    
     std::shared_ptr<TaskQueue> taskQueue_;
 };
 

@@ -34,7 +34,10 @@ const Task& TaskQueue::peekTopTask()
     catch(int n) {
         std::cout << "Ending the program. Error " << n << std::endl;
     }
-    abort();
+    catch(...) {
+        std::cout << "Unknown Error" << std::endl;
+    }
+     abort();
 }
 
 const Task& TaskQueue::popTopTask()
@@ -55,16 +58,37 @@ const Task& TaskQueue::popTopTask()
     catch(int n) {
         std::cout << "Ending the program. Error " << n << std::endl;
     }
+    catch(...) {
+        std::cout << "Unknown Error" << std::endl;
+    }
     abort();
 }
 
 void TaskQueue::addTask( const Task& item )
 {
-    while( node_ == nullptr)
-    if ( node_ == nullptr ){
+    // Keeps a copy of the address of the node
+    std::shared_ptr<Node> iterator_ = node_;
+    
+    // If it's the first element, we need to
+    // create a first element.
+    if( node_ == nullptr){
         node_ = std::make_shared<Node>(item);
         return;
     }
-    node_.get()->prevNode_ = std::make_shared<Node>(item);
     
+    // There is already a node and we iterate
+    // over the nodes until one is has no address.
+    // Complexity O(n)
+    while(node_->prevNode_ != nullptr)
+    {
+        node_ = node_->prevNode_;
+    }
+    
+    // The node now contains an address that points
+    // towards a node that was added.
+    node_->prevNode_ = std::make_shared<Node>(item);
+    
+    // The node's address is now the same as in
+    // the beginning.
+    node_ = iterator_;
 }

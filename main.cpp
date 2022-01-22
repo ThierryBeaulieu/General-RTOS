@@ -56,7 +56,7 @@ int main() {
 #endif
     
 #if TASKS_MANIPULATION_WITH_OS
-    OperatingSystem* os = OperatingSystem::createInstance();
+    OperatingSystem os;
     
     std::string taskNameForOS1 = "green light";
     std::string taskNameForOS2 = "red light";
@@ -67,8 +67,8 @@ int main() {
     taskAction1.action();
     taskAction2.action();
             
-    os->addTask(taskAction1);
-    os->addTask(taskAction2);
+    os.addTask(taskAction1);
+    os.addTask(taskAction2);
     
 #endif
     

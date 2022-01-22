@@ -7,24 +7,13 @@
 
 #include "OperatingSystem.h"
 
-OperatingSystem* OperatingSystem::instance_ = nullptr;
-
-OperatingSystem* OperatingSystem::createInstance(){
-    if(instance_ == nullptr)
-    {
-        OperatingSystem os;
-        instance_ = &os;
-    }
-    return instance_;
-}
-
 OperatingSystem::OperatingSystem()
 {
-    taskQueue_ = std::make_shared<TaskQueue>();
+    OperatingSystem::taskQueue_ = std::make_shared<TaskQueue>();
 }
 
 void OperatingSystem::addTask(const Task& task){
-    taskQueue_->addTask(task);
+    OperatingSystem::taskQueue_->addTask(task);
 }
 
 void OperatingSystem::run(){
