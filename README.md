@@ -1,4 +1,4 @@
 # General-RTOS
-This version of the RTOS's library is a generic one. It contains the tools that an RTOS needs, but it isn't specific to a type of microcontroller. Therefore, this library can't be downloaded and used. The user needs to implement key elements that will depend on its microcontroller like the timers.
+This is a library created to make an RTOS that could be personalised for different types of microcontroller. The goal of this library is to create a structure that would resemble the one of an RTOS by incorporating key concepts that would normally be present in an RTOS.
 
-Therefore, since that the project doesn't depend on the installation of the library on the microcontroller, you can run the project with a Makefile or on your IDE by creating a new project. 
+If you wish to use an RTOS for a microcontroller, you could adapt the structure according to your needs. Therefore, since that the project doesn't depend on the installation of the library on a microcontroller, you can run the project with a Makefile or on your IDE by creating a new project. 
