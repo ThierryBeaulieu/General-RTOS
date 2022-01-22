@@ -13,6 +13,7 @@
 #include <exception>
 
 #include "Task.h"
+#include "Node.h"
 
 class Node;
 
@@ -28,17 +29,6 @@ public:
     
 private:
     std::shared_ptr<Node> node_;
-};
-
-
-class Node {
-public:
-    Node( const Task& item );
-    
-    const Task* currentItem_ = nullptr;
-    
-    std::shared_ptr<Node> nextNode_;
-    std::shared_ptr<Node> prevNode_;
 };
 
 #endif /* TaskQueue_h */

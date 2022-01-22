@@ -7,10 +7,6 @@
 
 #include "TaskQueue.h"
 
-Node::Node( const Task& item ){
-    currentItem_ = &item;
-}
-
 TaskQueue::TaskQueue()
 {
     node_ = nullptr;

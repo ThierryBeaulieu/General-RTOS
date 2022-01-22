@@ -23,7 +23,7 @@
 int main() {
     
 #if OPERATIONS_IN_TASKQUEUE
-
+    
     std::string taskName1 = "blinking light";
     std::string taskName2 = "write something";
     std::string taskName3 = "write anotherthing";
@@ -31,7 +31,7 @@ int main() {
     ShowTaskName task1(taskName1);
     ShowTaskName task2(taskName2);
     ShowTaskName task3(taskName3);
-    
+
     TaskQueue queue = TaskQueue();
     
     queue.addTask(task1);
