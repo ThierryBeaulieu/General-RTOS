@@ -60,11 +60,11 @@ const Task& TaskQueue::popTopTask()
 
 void TaskQueue::addTask( const Task& item )
 {
-    
+    while( node_ == nullptr)
     if ( node_ == nullptr ){
         node_ = std::make_shared<Node>(item);
         return;
     }
-    
     node_.get()->prevNode_ = std::make_shared<Node>(item);
+    
 }

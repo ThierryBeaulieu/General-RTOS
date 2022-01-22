@@ -20,7 +20,7 @@ OperatingSystem* OperatingSystem::createInstance(){
 
 OperatingSystem::OperatingSystem()
 {
-    taskQueue_ = std::make_unique<TaskQueue>();
+    taskQueue_ = std::make_shared<TaskQueue>();
 }
 
 void OperatingSystem::addTask(const Task& task){

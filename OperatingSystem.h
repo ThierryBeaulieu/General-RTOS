@@ -24,7 +24,8 @@ public:
 
 private:
     OperatingSystem();
-    std::unique_ptr<TaskQueue> taskQueue_;
+    
+    std::shared_ptr<TaskQueue> taskQueue_;
 };
 
 #endif /* OperatingSystem_h */
