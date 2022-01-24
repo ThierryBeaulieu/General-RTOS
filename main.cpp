@@ -5,10 +5,6 @@
 //  Created by Thierry Beaulieu on 2022-01-21.
 //
 
-/* TODO:
- * Make the node class only accessible via TaskStack
- */
-
 #include <iostream>
 #include <assert.h>
 #include <vector>
