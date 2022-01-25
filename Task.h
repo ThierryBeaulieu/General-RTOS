@@ -13,15 +13,22 @@
 
 class Task{
 public:
+    Task(const std::string& name, unsigned char priority);
     Task(const std::string& name);
+    
     ~Task() = default;
     
     const std::string& getName() const;
+    unsigned char getPriority() const;
     
     virtual void action() = 0;
     
 private:
+    Task();
     const std::string* name_ = nullptr;
+    unsigned char priority_;
+    const unsigned char PRIORITY_MIN = 15;
 };
 
 #endif /* Task_h */
+
