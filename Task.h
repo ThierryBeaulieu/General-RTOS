@@ -21,7 +21,7 @@ public:
     const std::string& getName() const;
     unsigned char getPriority() const;
     
-    virtual void action() = 0;
+    virtual void action() const = 0;
     
 private:
     Task();

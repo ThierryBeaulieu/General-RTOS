@@ -17,26 +17,16 @@ TaskQueue::TaskQueue( const Task& item )
     node_ = std::make_shared<Node>(item);
 }
 
-const Task& TaskQueue::peekTopTask()
+const Task* TaskQueue::peekTopTask()
 {
-    try
-    {
-        if ( node_ != nullptr ){
-            return *node_.get()->currentItem_;
-        } else {
-            throw 1;
-        }
+    if ( node_ != nullptr ){
+        return node_.get()->currentItem_;
+    } else {
+        return nullptr;
     }
-    catch(int n) {
-        std::cout << "Ending the program. Error " << n << std::endl;
-    }
-    catch(...) {
-        std::cout << "Unknown Error" << std::endl;
-    }
-     abort();
 }
 
-const Task& TaskQueue::popTopTask()
+const Task* TaskQueue::popTopTask()
 {
     try
     {
@@ -45,7 +35,7 @@ const Task& TaskQueue::popTopTask()
             std::shared_ptr<Node> prevNode = node_->prevNode_;
             const Task& item = *node_.get()->currentItem_;
             node_ = prevNode;
-            return item;
+            return &item;
             
         } else {
             throw 1;
@@ -75,6 +65,8 @@ void TaskQueue::addTask( const Task& item )
     // There is already a node and we iterate
     // over the nodes until one is has no address.
     // Complexity O(n)
+    
+    // TODO: Add the nodes according to the task's priority
     while(node_->prevNode_ != nullptr)
     {
         node_ = node_->prevNode_;

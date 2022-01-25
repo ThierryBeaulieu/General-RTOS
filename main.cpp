@@ -38,41 +38,49 @@ int main() {
     queue.addTask(task2);
     queue.addTask(task3);
     
-    assert(queue.peekTopTask().getName() == taskName1);
-    assert(queue.peekTopTask().getName() == taskName1);
-    assert(queue.peekTopTask().getName() == taskName1);
-    assert(queue.popTopTask().getName() == taskName1);
+    assert(queue.peekTopTask()->getName() == taskName1);
+    assert(queue.peekTopTask()->getName() == taskName1);
+    assert(queue.peekTopTask()->getName() == taskName1);
+    assert(queue.popTopTask()->getName() == taskName1);
     
-    assert(queue.peekTopTask().getName() == taskName2);
-    assert(queue.peekTopTask().getName() == taskName2);
-    assert(queue.peekTopTask().getName() == taskName2);
-    assert(queue.popTopTask().getName() == taskName2);
+    assert(queue.peekTopTask()->getName() == taskName2);
+    assert(queue.peekTopTask()->getName() == taskName2);
+    assert(queue.peekTopTask()->getName() == taskName2);
+    assert(queue.popTopTask()->getName() == taskName2);
     
-    assert(queue.peekTopTask().getName() == taskName3);
-    assert(queue.peekTopTask().getName() == taskName3);
-    assert(queue.peekTopTask().getName() == taskName3);
-    assert(queue.popTopTask().getName() == taskName3);
+    assert(queue.peekTopTask()->getName() == taskName3);
+    assert(queue.peekTopTask()->getName() == taskName3);
+    assert(queue.peekTopTask()->getName() == taskName3);
+    assert(queue.popTopTask()->getName() == taskName3);
+    
+    assert(queue.peekTopTask() == nullptr);
     
 #endif
     
 #if TASKS_MANIPULATION_WITH_OS
     OperatingSystem os;
     
-    std::string taskNameForOS1 = "green light";
-    std::string taskNameForOS2 = "red light";
-    std::string taskNameForOS3 = "ambre light";
+    std::string taskNameForOS1 = "task1";
+    std::string taskNameForOS2 = "task2";
+    std::string taskNameForOS3 = "task3";
     
     ShowTaskName taskAction1 = ShowTaskName( taskNameForOS1, priority1 );
     ShowTaskName taskAction2 = ShowTaskName( taskNameForOS2, priority2 );
     ShowTaskName taskAction3 = ShowTaskName( taskNameForOS3, priority3 );
-    
-    taskAction1.action();
-    taskAction1.action();
-    taskAction2.action();
-    taskAction3.action();
            
     os.addTask(taskAction1);
     os.addTask(taskAction2);
+    os.addTask(taskAction3);
+    
+    os.addTask(taskAction1);
+    os.addTask(taskAction2);
+    os.addTask(taskAction3);
+    
+    taskNameForOS1 = "task11";
+    taskNameForOS2 = "task12";
+    taskNameForOS3 = "task13";
+    
+    os.run();
     
 #endif
     

@@ -11,6 +11,6 @@ ShowTaskName::ShowTaskName(const std::string& name, unsigned char priority): Tas
 
 ShowTaskName::ShowTaskName(const std::string& name): Task(name){}
 
-void ShowTaskName::action(){
+void ShowTaskName::action() const {
     std::cout << this->Task::getName() << std::endl;
 }

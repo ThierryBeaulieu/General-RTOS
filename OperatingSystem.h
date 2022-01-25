@@ -17,7 +17,7 @@ public:
     OperatingSystem();
     void addTask(const Task& task);
     
-    void run();
+    void run() const;
 
 private:
     std::shared_ptr<TaskQueue> taskQueue_;

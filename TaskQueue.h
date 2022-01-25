@@ -21,8 +21,8 @@ public:
     TaskQueue();
     TaskQueue( const Task& item );
     
-    const Task& peekTopTask();
-    const Task& popTopTask();
+    const Task* peekTopTask();
+    const Task* popTopTask();
     
     void addTask(const Task& item);
     

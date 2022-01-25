@@ -19,7 +19,7 @@ public:
     
     ~ShowTaskName() = default;
     
-    virtual void action();
+    virtual void action() const;
     
 };
 
