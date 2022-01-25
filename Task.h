@@ -28,7 +28,7 @@ private:
     const std::string* name_ = nullptr;
     unsigned char priority_;
     const unsigned char PRIORITY_MIN = 15;
+    const unsigned char PRIORITY_MAX = 1;
 };
 
 #endif /* Task_h */
-

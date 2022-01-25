@@ -7,6 +7,8 @@
 
 #include "ShowTaskName.h"
 
+ShowTaskName::ShowTaskName(const std::string& name, unsigned char priority): Task(name, priority){}
+
 ShowTaskName::ShowTaskName(const std::string& name): Task(name){}
 
 void ShowTaskName::action(){

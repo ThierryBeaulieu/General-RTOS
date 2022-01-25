@@ -23,6 +23,10 @@ int main() {
     std::string taskName1 = "blinking light";
     std::string taskName2 = "write something";
     std::string taskName3 = "write anotherthing";
+    
+    unsigned char priority1 = 1;
+    unsigned char priority2 = 3;
+    unsigned char priority3 = 4;
 
     ShowTaskName task1(taskName1);
     ShowTaskName task2(taskName2);
@@ -56,13 +60,17 @@ int main() {
     
     std::string taskNameForOS1 = "green light";
     std::string taskNameForOS2 = "red light";
+    std::string taskNameForOS3 = "ambre light";
     
-    ShowTaskName taskAction1 = ShowTaskName(taskNameForOS1);
-    ShowTaskName taskAction2 = ShowTaskName(taskNameForOS2);
+    ShowTaskName taskAction1 = ShowTaskName( taskNameForOS1, priority1 );
+    ShowTaskName taskAction2 = ShowTaskName( taskNameForOS2, priority2 );
+    ShowTaskName taskAction3 = ShowTaskName( taskNameForOS3, priority3 );
     
     taskAction1.action();
+    taskAction1.action();
     taskAction2.action();
-            
+    taskAction3.action();
+           
     os.addTask(taskAction1);
     os.addTask(taskAction2);
     

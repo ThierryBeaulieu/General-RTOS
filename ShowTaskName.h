@@ -14,7 +14,9 @@
 class ShowTaskName: public Task
 {
 public:
+    ShowTaskName(const std::string& name, unsigned char priority);
     ShowTaskName(const std::string& name);
+    
     ~ShowTaskName() = default;
     
     virtual void action();

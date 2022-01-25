@@ -13,7 +13,6 @@
 #include <exception>
 
 #include "Task.h"
-#include "Node.h"
 
 class Node;
 
@@ -27,6 +26,17 @@ public:
     
     void addTask(const Task& item);
     
+    class Node {
+    public:
+        Node( const Task& item ){
+            currentItem_ = &item;
+        }
+        const Task* currentItem_ = nullptr;
+        
+        std::shared_ptr<Node> nextNode_;
+        std::shared_ptr<Node> prevNode_;
+    };
+
 private:
     std::shared_ptr<Node> node_;
 };
