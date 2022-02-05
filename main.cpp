@@ -32,7 +32,7 @@ int main() {
     ShowTaskName task2(taskName2);
     ShowTaskName task3(taskName3);
 
-    Queue queue = Queue();
+    Queue<Task> queue = Queue<Task>();
     
     queue.addTask(task1);
     queue.addTask(task2);
