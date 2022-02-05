@@ -1,22 +1,19 @@
 //
-//  TaskStack.cpp
-//  Dev_stack_data_structure
+//  Queue.cpp
+//  RTOS
 //
-//  Created by Thierry Beaulieu on 2022-01-21.
+//  Created by Thierry Beaulieu on 2022-02-05.
 //
 
-#include "TaskQueue.h"
+#include "Queue.h"
 
-TaskQueue::TaskQueue()
+
+Queue::Queue()
 {
     mainQueue_ = nullptr;
-    
-    for(int i = 0; i < NB_PRIORITIES; i++){
-        priorities_[i] = nullptr;
-    }
 }
 
-const Task* TaskQueue::peekTopTask()
+const Task* Queue::peekTopTask()
 {
     if ( mainQueue_ != nullptr ){
         return mainQueue_.get()->currentItem_;
@@ -25,7 +22,7 @@ const Task* TaskQueue::peekTopTask()
     }
 }
 
-const Task* TaskQueue::popTopTask()
+const Task* Queue::popTopTask()
 {
     try
     {
@@ -49,7 +46,7 @@ const Task* TaskQueue::popTopTask()
     abort();
 }
 
-void TaskQueue::addTaskMainQueue( const Task& task )
+void Queue::addTask( const Task& task )
 {
     // Keeps a copy of the address of the node
     std::shared_ptr<Node> iterator_ = mainQueue_;
@@ -73,13 +70,4 @@ void TaskQueue::addTaskMainQueue( const Task& task )
     // The node's address is now the same as in
     // the beginning.
     mainQueue_ = iterator_;
-}
-
-
-// Implémenter le design pattern command.
-// Il faut pouvoir ajouter les tâches dans un buffer et lorsqu'on est pour run le code,
-// il devient nécessaire que ce soit à partir de ce moment que les données soient ajoutées
-// dans la queue.
-void TaskQueue::addTask(const Task& task){
-    
 }

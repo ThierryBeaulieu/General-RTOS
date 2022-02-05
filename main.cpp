@@ -8,17 +8,17 @@
 #include <iostream>
 #include <assert.h>
 #include <vector>
-#include "TaskQueue.h"
+#include "Queue.h"
 #include "OperatingSystem.h"
 #include "ShowTaskName.h"
 
-#define OPERATIONS_IN_TASKQUEUE true
+#define OPERATIONS_IN_QUEUE true
 #define TASKS_MANIPULATION_WITH_OS true
 
-
+ 
 int main() {
     
-#if OPERATIONS_IN_TASKQUEUE
+#if OPERATIONS_IN_QUEUE
     
     std::string taskName1 = "blinking light";
     std::string taskName2 = "write something";
@@ -32,11 +32,11 @@ int main() {
     ShowTaskName task2(taskName2);
     ShowTaskName task3(taskName3);
 
-    TaskQueue queue = TaskQueue();
+    Queue queue = Queue();
     
-    queue.addTaskMainQueue(task1);
-    queue.addTaskMainQueue(task2);
-    queue.addTaskMainQueue(task3);
+    queue.addTask(task1);
+    queue.addTask(task2);
+    queue.addTask(task3);
     
     assert(queue.peekTopTask()->getName() == taskName1);
     assert(queue.peekTopTask()->getName() == taskName1);
