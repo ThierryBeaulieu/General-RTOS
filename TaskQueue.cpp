@@ -16,20 +16,11 @@ TaskQueue::TaskQueue(){
 }
 
 void TaskQueue::addTask(const Task& task){
-    
-    // TODO: Fix this bug. The items aren't
-    // added to the different queues.
-    
     priorities_[task.getPriority()-1]->add(task);
 }
 
-const Task* TaskQueue::popTask(){
+void TaskQueue::generateQueue(){
     
-    // Iterates over the array of tasks
-    // to add them, form the most to the least
-    // important
-    
-    // The algorithm could be improved
     for ( int i = 0; i < NB_PRIORITIES; i++ ){
         while ( priorities_[i] != nullptr){
             while(priorities_[i]->peekTop() != nullptr){
@@ -37,6 +28,11 @@ const Task* TaskQueue::popTask(){
             }
         }
     }
+}
+
+const Task* TaskQueue::popTask(){
+    
+    generateQueue();
     
     // If there is something inside the array, something is returned.
     return mainQueue_->popTop();

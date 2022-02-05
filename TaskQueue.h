@@ -25,8 +25,11 @@ public:
     
     void addTask(const Task& task);
     
+    void generateQueue();
+    
     const Task* popTask();
     const Task* peekTask();
+    
     
 private:
     std::shared_ptr<Queue<Task>> priorities_[NB_PRIORITIES];

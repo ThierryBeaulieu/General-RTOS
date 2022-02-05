@@ -17,6 +17,9 @@ void OperatingSystem::addTask(const Task& task){
 }
 
 void OperatingSystem::run() const {
+    
+    taskQueue_->generateQueue();
+    
     while(taskQueue_->peekTask() != nullptr){
         taskQueue_->popTask()->action();
     }

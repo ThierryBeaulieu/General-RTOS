@@ -26,7 +26,7 @@ int main() {
     
     unsigned char priority1 = 1;
     unsigned char priority2 = 3;
-    unsigned char priority3 = 4;
+    unsigned char priority3 = 2;
 
     ShowTaskName task1(taskName1);
     ShowTaskName task2(taskName2);
