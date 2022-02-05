@@ -9,11 +9,15 @@
 
 OperatingSystem::OperatingSystem()
 {
-    taskQueue_ = std::make_shared<TaskQueue>();
+    taskQueue_ = std::make_unique<TaskQueue>();
 }
 
 void OperatingSystem::addTask(const Task& task){
+    taskQueue_->addTask(task);
 }
 
 void OperatingSystem::run() const {
+    while(taskQueue_->peekTask() != nullptr){
+        taskQueue_->popTask()->action();
+    }
 }

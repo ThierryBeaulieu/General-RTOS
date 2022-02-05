@@ -39,6 +39,7 @@ template<typename T>
 Queue<T>::Queue()
 {
     queue_ = nullptr;
+    nbItem_ = 0;
 }
 
 template<typename T>
@@ -79,15 +80,17 @@ const T* Queue<T>::popTop()
 template<typename T>
 void Queue<T>::add( const T& task )
 {
-    // Keeps a copy of the address of the node
-    std::shared_ptr<Node> iterator_ = queue_;
     
     // If it's the first element, we need to
     // create a first element.
     if( queue_ == nullptr){
         queue_ = std::make_shared<Node>(task);
+        nbItem_++;
         return;
     }
+    
+    // Keeps a copy of the address of the node
+    std::shared_ptr<Node> iterator_ = queue_;
     
     while(queue_->prevNode_ != nullptr)
     {
@@ -104,8 +107,6 @@ void Queue<T>::add( const T& task )
     // The node's address is now the same as in
     // the beginning.
     queue_ = iterator_;
-    
-
 }
 
 

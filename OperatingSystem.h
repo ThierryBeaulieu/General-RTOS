@@ -16,11 +16,10 @@ class OperatingSystem
 public:
     OperatingSystem();
     void addTask(const Task& task);
-    
     void run() const;
 
 private:
-    std::shared_ptr<TaskQueue> taskQueue_;
+    std::unique_ptr<TaskQueue> taskQueue_;
 };
 
 #endif /* OperatingSystem_h */

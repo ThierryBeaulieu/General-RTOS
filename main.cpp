@@ -60,9 +60,9 @@ int main() {
 #if TASKS_MANIPULATION_WITH_OS
     OperatingSystem os;
     
-    std::string taskNameForOS1 = "task1";
-    std::string taskNameForOS2 = "task2";
-    std::string taskNameForOS3 = "task3";
+    std::string taskNameForOS1 = "task 1";
+    std::string taskNameForOS2 = "task 2";
+    std::string taskNameForOS3 = "task 3";
     
     ShowTaskName taskAction1 = ShowTaskName( taskNameForOS1, priority1 );
     ShowTaskName taskAction2 = ShowTaskName( taskNameForOS2, priority2 );
@@ -76,9 +76,9 @@ int main() {
     os.addTask(taskAction2);
     os.addTask(taskAction3);
     
-    taskNameForOS1 = "task11";
-    taskNameForOS2 = "task12";
-    taskNameForOS3 = "task13";
+    taskNameForOS1 = "task 1.1";
+    taskNameForOS2 = "task 1.2";
+    taskNameForOS3 = "task 1.3";
     
     os.run();
     
