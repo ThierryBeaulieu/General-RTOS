@@ -13,7 +13,7 @@ OperatingSystem::OperatingSystem()
 }
 
 void OperatingSystem::addTask(const Task& task){
-    taskQueue_->addTask(task);
+    taskQueue_->addTaskMainQueue(task);
 }
 
 void OperatingSystem::run() const {

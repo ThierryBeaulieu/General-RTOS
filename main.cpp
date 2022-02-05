@@ -34,9 +34,9 @@ int main() {
 
     TaskQueue queue = TaskQueue();
     
-    queue.addTask(task1);
-    queue.addTask(task2);
-    queue.addTask(task3);
+    queue.addTaskMainQueue(task1);
+    queue.addTaskMainQueue(task2);
+    queue.addTaskMainQueue(task3);
     
     assert(queue.peekTopTask()->getName() == taskName1);
     assert(queue.peekTopTask()->getName() == taskName1);

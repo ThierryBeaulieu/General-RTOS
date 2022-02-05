@@ -13,32 +13,27 @@
 #include <exception>
 
 #include "Task.h"
+#include "Node.h"
+
+#define NB_PRIORITIES 15
 
 class Node;
 
 class TaskQueue {
 public:
     TaskQueue();
-    TaskQueue( const Task& item );
     
     const Task* peekTopTask();
     const Task* popTopTask();
     
-    void addTask(const Task& item);
+    void addTask(const Task& task);
     
-    class Node {
-    public:
-        Node( const Task& item ){
-            currentItem_ = &item;
-        }
-        const Task* currentItem_ = nullptr;
-        
-        std::shared_ptr<Node> nextNode_;
-        std::shared_ptr<Node> prevNode_;
-    };
-
+    void addTaskMainQueue(const Task& task); // make private
+    
 private:
-    std::shared_ptr<Node> node_;
+    std::shared_ptr<Node> priorities_[NB_PRIORITIES];
+    std::shared_ptr<Node> mainQueue_;
+    std::shared_ptr<Node> lastItemMainQueue_;
 };
 
 #endif /* TaskQueue_h */

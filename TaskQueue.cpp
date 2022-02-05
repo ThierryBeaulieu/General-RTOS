@@ -9,18 +9,17 @@
 
 TaskQueue::TaskQueue()
 {
-    node_ = nullptr;
-}
-
-TaskQueue::TaskQueue( const Task& item )
-{
-    node_ = std::make_shared<Node>(item);
+    mainQueue_ = nullptr;
+    
+    for(int i = 0; i < NB_PRIORITIES; i++){
+        priorities_[i] = nullptr;
+    }
 }
 
 const Task* TaskQueue::peekTopTask()
 {
-    if ( node_ != nullptr ){
-        return node_.get()->currentItem_;
+    if ( mainQueue_ != nullptr ){
+        return mainQueue_.get()->currentItem_;
     } else {
         return nullptr;
     }
@@ -30,11 +29,11 @@ const Task* TaskQueue::popTopTask()
 {
     try
     {
-        if ( node_ != nullptr ){
+        if ( mainQueue_ != nullptr ){
             
-            std::shared_ptr<Node> prevNode = node_->prevNode_;
-            const Task& item = *node_.get()->currentItem_;
-            node_ = prevNode;
+            std::shared_ptr<Node> prevNode = mainQueue_->prevNode_;
+            const Task& item = *mainQueue_.get()->currentItem_;
+            mainQueue_ = prevNode;
             return &item;
             
         } else {
@@ -50,33 +49,33 @@ const Task* TaskQueue::popTopTask()
     abort();
 }
 
-void TaskQueue::addTask( const Task& item )
+void TaskQueue::addTaskMainQueue( const Task& task )
 {
     // Keeps a copy of the address of the node
-    std::shared_ptr<Node> iterator_ = node_;
+    std::shared_ptr<Node> iterator_ = mainQueue_;
     
     // If it's the first element, we need to
     // create a first element.
-    if( node_ == nullptr){
-        node_ = std::make_shared<Node>(item);
+    if( mainQueue_ == nullptr){
+        mainQueue_ = std::make_shared<Node>(task);
         return;
     }
     
-    // There is already a node and we iterate
-    // over the nodes until one is has no address.
-    // Complexity O(n)
-    
-    // TODO: Add the nodes according to the task's priority
-    while(node_->prevNode_ != nullptr)
+    while(mainQueue_->prevNode_ != nullptr)
     {
-        node_ = node_->prevNode_;
+        mainQueue_ = mainQueue_->prevNode_;
     }
     
     // The node now contains an address that points
     // towards a node that was added.
-    node_->prevNode_ = std::make_shared<Node>(item);
+    mainQueue_->prevNode_ = std::make_shared<Node>(task);
     
     // The node's address is now the same as in
     // the beginning.
-    node_ = iterator_;
+    mainQueue_ = iterator_;
+}
+
+
+void TaskQueue::addTask(const Task& task){
+    
 }
