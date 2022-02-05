@@ -23,7 +23,13 @@ public:
     
     void add(const T& task);
     
+    int getnbItem(){
+        return nbItem_;
+    }
+    
 private:
+    
+    int nbItem_;
     std::shared_ptr<Node> queue_;
     std::shared_ptr<Node> lastItemQueue_;
 };
@@ -92,9 +98,14 @@ void Queue<T>::add( const T& task )
     // towards a node that was added.
     queue_->prevNode_ = std::make_shared<Node>(task);
     
+    // Increment the number of items in the queue.
+    nbItem_++;
+    
     // The node's address is now the same as in
     // the beginning.
     queue_ = iterator_;
+    
+
 }
 
 

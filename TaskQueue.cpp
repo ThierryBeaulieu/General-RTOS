@@ -7,8 +7,7 @@
 
 #include "TaskQueue.h"
 
-TaskQueue::TaskQueue()
-{
+TaskQueue::TaskQueue(){
     mainQueue_ = std::make_unique<Queue<Task>>();
     
     for(int i = 0; i < NB_PRIORITIES; i++){
