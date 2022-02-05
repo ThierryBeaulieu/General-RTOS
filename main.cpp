@@ -34,26 +34,26 @@ int main() {
 
     Queue<Task> queue = Queue<Task>();
     
-    queue.addTask(task1);
-    queue.addTask(task2);
-    queue.addTask(task3);
+    queue.add(task1);
+    queue.add(task2);
+    queue.add(task3);
     
-    assert(queue.peekTopTask()->getName() == taskName1);
-    assert(queue.peekTopTask()->getName() == taskName1);
-    assert(queue.peekTopTask()->getName() == taskName1);
-    assert(queue.popTopTask()->getName() == taskName1);
+    assert(queue.peekTop()->getName() == taskName1);
+    assert(queue.peekTop()->getName() == taskName1);
+    assert(queue.peekTop()->getName() == taskName1);
+    assert(queue.popTop()->getName() == taskName1);
     
-    assert(queue.peekTopTask()->getName() == taskName2);
-    assert(queue.peekTopTask()->getName() == taskName2);
-    assert(queue.peekTopTask()->getName() == taskName2);
-    assert(queue.popTopTask()->getName() == taskName2);
+    assert(queue.peekTop()->getName() == taskName2);
+    assert(queue.peekTop()->getName() == taskName2);
+    assert(queue.peekTop()->getName() == taskName2);
+    assert(queue.popTop()->getName() == taskName2);
     
-    assert(queue.peekTopTask()->getName() == taskName3);
-    assert(queue.peekTopTask()->getName() == taskName3);
-    assert(queue.peekTopTask()->getName() == taskName3);
-    assert(queue.popTopTask()->getName() == taskName3);
+    assert(queue.peekTop()->getName() == taskName3);
+    assert(queue.peekTop()->getName() == taskName3);
+    assert(queue.peekTop()->getName() == taskName3);
+    assert(queue.popTop()->getName() == taskName3);
     
-    assert(queue.peekTopTask() == nullptr);
+    assert(queue.peekTop() == nullptr);
     
 #endif
     

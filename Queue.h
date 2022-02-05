@@ -18,43 +18,43 @@ public:
     
     Queue();
     
-    const T* peekTopTask();
-    const T* popTopTask();
+    const T* peekTop();
+    const T* popTop();
     
-    void addTask(const T& task);
+    void add(const T& task);
     
 private:
-    std::shared_ptr<Node> mainQueue_;
-    std::shared_ptr<Node> lastItemMainQueue_;
+    std::shared_ptr<Node> queue_;
+    std::shared_ptr<Node> lastItemQueue_;
 };
 
 
 template<typename T>
 Queue<T>::Queue()
 {
-    mainQueue_ = nullptr;
+    queue_ = nullptr;
 }
 
 template<typename T>
-const T* Queue<T>::peekTopTask()
+const T* Queue<T>::peekTop()
 {
-    if ( mainQueue_ != nullptr ){
-        return mainQueue_.get()->currentItem_;
+    if ( queue_ != nullptr ){
+        return queue_.get()->currentItem_;
     } else {
         return nullptr;
     }
 }
 
 template<typename T>
-const T* Queue<T>::popTopTask()
+const T* Queue<T>::popTop()
 {
     try
     {
-        if ( mainQueue_ != nullptr ){
+        if ( queue_ != nullptr ){
             
-            std::shared_ptr<Node> prevNode = mainQueue_->prevNode_;
-            const T& item = *mainQueue_.get()->currentItem_;
-            mainQueue_ = prevNode;
+            std::shared_ptr<Node> prevNode = queue_->prevNode_;
+            const T& item = *queue_.get()->currentItem_;
+            queue_ = prevNode;
             return &item;
             
         } else {
@@ -71,30 +71,30 @@ const T* Queue<T>::popTopTask()
 }
 
 template<typename T>
-void Queue<T>::addTask( const T& task )
+void Queue<T>::add( const T& task )
 {
     // Keeps a copy of the address of the node
-    std::shared_ptr<Node> iterator_ = mainQueue_;
+    std::shared_ptr<Node> iterator_ = queue_;
     
     // If it's the first element, we need to
     // create a first element.
-    if( mainQueue_ == nullptr){
-        mainQueue_ = std::make_shared<Node>(task);
+    if( queue_ == nullptr){
+        queue_ = std::make_shared<Node>(task);
         return;
     }
     
-    while(mainQueue_->prevNode_ != nullptr)
+    while(queue_->prevNode_ != nullptr)
     {
-        mainQueue_ = mainQueue_->prevNode_;
+        queue_ = queue_->prevNode_;
     }
     
     // The node now contains an address that points
     // towards a node that was added.
-    mainQueue_->prevNode_ = std::make_shared<Node>(task);
+    queue_->prevNode_ = std::make_shared<Node>(task);
     
     // The node's address is now the same as in
     // the beginning.
-    mainQueue_ = iterator_;
+    queue_ = iterator_;
 }
 
 

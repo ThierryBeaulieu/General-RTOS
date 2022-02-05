@@ -7,6 +7,9 @@
 
 #include "Node.h"
 
+Node::Node(){
+    currentItem_ = nullptr;
+}
 
 Node::Node( const Task& item ){
     currentItem_ = &item;

@@ -22,18 +22,11 @@ class Node;
 class TaskQueue {
 public:
     TaskQueue();
-    
-    const Task* peekTopTask();
-    const Task* popTopTask();
-    
     void addTask(const Task& task);
-    
-    void addTaskMainQueue(const Task& task); // make private
     
 private:
     std::shared_ptr<Node> priorities_[NB_PRIORITIES];
     std::shared_ptr<Node> mainQueue_;
-    std::shared_ptr<Node> lastItemMainQueue_;
 };
 
 #endif /* TaskQueue_h */

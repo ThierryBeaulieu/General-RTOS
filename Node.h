@@ -12,8 +12,9 @@
 
 class Node {
 public:
+    Node();
     Node( const Task& item );
-    const Task* currentItem_ = nullptr;
+    const Task* currentItem_;
     
     std::shared_ptr<Node> nextNode_;
     std::shared_ptr<Node> prevNode_;
