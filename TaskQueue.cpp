@@ -30,8 +30,6 @@ void TaskQueue::generateQueue(){
 
 const Task* TaskQueue::popTask(){
     
-    generateQueue();
-    
     // If there is something inside the array, something is returned.
     return mainQueue_->popTop();
 }

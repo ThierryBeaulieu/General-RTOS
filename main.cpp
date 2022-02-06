@@ -72,12 +72,15 @@ int main() {
     ShowTaskName taskAction21 = ShowTaskName( taskNameForOS21, priority2 );
     ShowTaskName taskAction22 = ShowTaskName( taskNameForOS22, priority2 );
     ShowTaskName taskAction6 = ShowTaskName( taskNameForOS6, priority6 );
-           
-    os.addTask(taskAction1);
+    
+    // The order in which the tasks are
+    // added doesn't matter, the result
+    // will be the same.
+    os.addTask(taskAction6);
     os.addTask(taskAction3);
     os.addTask(taskAction21);
+    os.addTask(taskAction1);
     os.addTask(taskAction22);
-    os.addTask(taskAction6);
     
     taskNameForOS1 = "task priority 1.0";
     taskNameForOS3 = "task priority 3.0";
@@ -85,6 +88,8 @@ int main() {
     taskNameForOS22 = "task priority 2.2";
     taskNameForOS6 = "task priority 6.0";
     
+    
+    // It executes the tasks
     os.run();
     
 #endif
