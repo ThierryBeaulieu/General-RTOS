@@ -25,8 +25,11 @@ int main() {
     std::string taskName3 = "write anotherthing";
     
     unsigned char priority1 = 1;
-    unsigned char priority2 = 3;
-    unsigned char priority3 = 2;
+    unsigned char priority2 = 2;
+    unsigned char priority3 = 3;
+    unsigned char priority4 = 4;
+    unsigned char priority5 = 5;
+    unsigned char priority6 = 6;
 
     ShowTaskName task1(taskName1);
     ShowTaskName task2(taskName2);
@@ -60,25 +63,29 @@ int main() {
 #if TASKS_MANIPULATION_WITH_OS
     OperatingSystem os;
     
-    std::string taskNameForOS1 = "task 1";
-    std::string taskNameForOS2 = "task 2";
-    std::string taskNameForOS3 = "task 3";
+    std::string taskNameForOS1 = "task priority 1.";
+    std::string taskNameForOS3 = "task priority 3.";
+    std::string taskNameForOS21 = "task priority 2.1";
+    std::string taskNameForOS22 = "task priority 2.2";
+    std::string taskNameForOS6 = "task priority 6.";
     
     ShowTaskName taskAction1 = ShowTaskName( taskNameForOS1, priority1 );
-    ShowTaskName taskAction2 = ShowTaskName( taskNameForOS2, priority2 );
     ShowTaskName taskAction3 = ShowTaskName( taskNameForOS3, priority3 );
+    ShowTaskName taskAction21 = ShowTaskName( taskNameForOS21, priority2 );
+    ShowTaskName taskAction22 = ShowTaskName( taskNameForOS22, priority2 );
+    ShowTaskName taskAction6 = ShowTaskName( taskNameForOS6, priority6 );
            
     os.addTask(taskAction1);
-    os.addTask(taskAction2);
     os.addTask(taskAction3);
+    os.addTask(taskAction21);
+    os.addTask(taskAction22);
+    os.addTask(taskAction6);
     
-    os.addTask(taskAction1);
-    os.addTask(taskAction2);
-    os.addTask(taskAction3);
-    
-    taskNameForOS1 = "task 1.1";
-    taskNameForOS2 = "task 1.2";
-    taskNameForOS3 = "task 1.3";
+    taskNameForOS1 = "task priority 1.0";
+    taskNameForOS3 = "task priority 3.0";
+    taskNameForOS21 = "task priority 2.1";
+    taskNameForOS22 = "task priority 2.2";
+    taskNameForOS6 = "task priority 6.0";
     
     os.run();
     
