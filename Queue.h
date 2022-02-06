@@ -31,7 +31,7 @@ private:
     
     int nbItem_;
     std::shared_ptr<Node> queue_;
-    std::shared_ptr<Node> lastItemQueue_;
+    std::shared_ptr<Node> lastItem_;
 };
 
 
@@ -39,6 +39,7 @@ template<typename T>
 Queue<T>::Queue()
 {
     queue_ = nullptr;
+    lastItem_ = nullptr;
     nbItem_ = 0;
 }
 
@@ -77,6 +78,7 @@ const T* Queue<T>::popTop()
     abort();
 }
 
+
 template<typename T>
 void Queue<T>::add( const T& task )
 {
@@ -86,27 +88,18 @@ void Queue<T>::add( const T& task )
     if( queue_ == nullptr){
         queue_ = std::make_shared<Node>(task);
         nbItem_++;
+        lastItem_ = queue_;
         return;
-    }
-    
-    // Keeps a copy of the address of the node
-    std::shared_ptr<Node> iterator_ = queue_;
-    
-    while(queue_->prevNode_ != nullptr)
-    {
-        queue_ = queue_->prevNode_;
     }
     
     // The node now contains an address that points
     // towards a node that was added.
-    queue_->prevNode_ = std::make_shared<Node>(task);
+    lastItem_->prevNode_ = std::make_shared<Node>(task);
     
     // Increment the number of items in the queue.
     nbItem_++;
     
-    // The node's address is now the same as in
-    // the beginning.
-    queue_ = iterator_;
+    lastItem_ = lastItem_->prevNode_;
 }
 
 

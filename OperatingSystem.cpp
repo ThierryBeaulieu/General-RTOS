@@ -18,8 +18,11 @@ void OperatingSystem::addTask(const Task& task){
 
 void OperatingSystem::run() const {
     
+    // TODO: Remove the sequential cohesion
+    // Needs to be call first
     taskQueue_->generateQueue();
     
+    // Can now be call
     while(taskQueue_->peekTask() != nullptr){
         taskQueue_->popTask()->action();
     }
