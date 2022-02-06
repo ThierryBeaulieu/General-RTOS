@@ -22,10 +22,8 @@ void TaskQueue::addTask(const Task& task){
 void TaskQueue::generateQueue(){
     
     for ( int i = 0; i < NB_PRIORITIES; i++ ){
-        while ( priorities_[i] != nullptr){
-            while(priorities_[i]->peekTop() != nullptr){
-                mainQueue_->add(*(priorities_[i]->popTop()));
-            }
+        while(priorities_[i]->peekTop() != nullptr){
+            mainQueue_->add(*(priorities_[i]->popTop()));
         }
     }
 }
