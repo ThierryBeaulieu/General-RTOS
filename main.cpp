@@ -27,8 +27,6 @@ int main() {
     unsigned char priority1 = 1;
     unsigned char priority2 = 2;
     unsigned char priority3 = 3;
-    unsigned char priority4 = 4;
-    unsigned char priority5 = 5;
     unsigned char priority6 = 6;
 
     ShowTaskName task1(taskName1);
