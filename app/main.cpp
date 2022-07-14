@@ -8,9 +8,9 @@
 #include <iostream>
 #include <assert.h>
 #include <vector>
-#include "Queue.h"
-#include "OperatingSystem.h"
-#include "ShowTaskName.h"
+#include <grtos/Queue.h>
+#include <grtos/OperatingSystem.h>
+#include <grtos/ShowTaskName.h>
 
 #define OPERATIONS_IN_QUEUE true
 #define TASKS_MANIPULATION_WITH_OS true

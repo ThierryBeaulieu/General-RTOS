@@ -1,4 +1,4 @@
-The system is: Darwin - 21.2.0 - arm64
+The system is: Windows - 10.0.19043 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler:  
 Build flags: 
@@ -6,91 +6,43 @@ Id flags:
 
 The output was:
 0
-2022-07-14 18:50:26.547 xcodebuild[11027:90271] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
-2022-07-14 18:50:26.547 xcodebuild[11027:90271] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
-Command line invocation:
-    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+Microsoft (R) Build Engine version 16.9.0+5e4b48a27 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
 
-User defaults from command line:
-    IDEPackageSupportUseBuiltinSCM = YES
+La g‚n‚ration a d‚marr‚ 2022-07-14 7:06:16 PM.
+Projet "C:\Users\Thierry\Desktop\General-RTOS\build\CMakeFiles\3.23.2\CompilerIdC\CompilerIdC.vcxproj" sur le noud 1 (cibles par d‚faut).
+PrepareForBuild:
+  Cr‚ation du r‚pertoire "Debug\".
+  Cr‚ation du r‚pertoire "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Cr‚ation de "Debug\CompilerIdC.tlog\unsuccessfulbuild", car "AlwaysCreate" a ‚t‚ sp‚cifi‚.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\Users\Thierry\Desktop\General-RTOS\build\CMakeFiles\3.23.2\CompilerIdC\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\Hostx64\x64\cl.exe
+FinalizeBuildStatus:
+  Suppression du fichier "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Mise … jour de l'horodatage "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+G‚n‚ration du projet "C:\Users\Thierry\Desktop\General-RTOS\build\CMakeFiles\3.23.2\CompilerIdC\CompilerIdC.vcxproj" termin‚e (cibles par d‚faut).
 
-note: Using new build system
-note: Planning
-Analyze workspace
+La g‚n‚ration a r‚ussi.
+    0 Avertissement(s)
+    0 Erreur(s)
 
-Create build description
-Build description signature: 719eee27f2a225bade2b159fe70de7a6
-Build description path: /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/./XCBuildData/719eee27f2a225bade2b159fe70de7a6-desc.xcbuild
-
-note: Build preparation complete
-warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
-CreateBuildDirectory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.xcodeproj
-    builtin-create-build-directory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-
-warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdC' from project 'CompilerIdC')
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/all-product-headers.yaml (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/all-product-headers.yaml
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-non-framework-target-headers.hmap
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList
-
-CompileC /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    export LANG\=en_US.US-ASCII
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-macos12.1 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fstrict-aliasing -Wdeprecated-declarations -g -fvisibility\=hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -iquote /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap -iquote /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/include -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources-normal/arm64 -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/arm64 -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC -MMD -MT dependencies -MF /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.d --serialize-diagnostics /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.dia -c /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.c -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CMakeCCompilerId.o
-
-Ld /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC normal (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target arm64-apple-macos12.1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -L/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_lto.o -Xlinker -dependency_info -Xlinker /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/arm64/CompilerIdC_dependency_info.dat -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
-
-PhaseScriptExecution Run\ Script /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    /bin/sh -c /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
-GCC_VERSION=com.apple.compilers.llvm.clang.1_0
-ARCHS=arm64
-
-RegisterExecutionPolicyException /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC (in target 'CompilerIdC' from project 'CompilerIdC')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC
-    builtin-RegisterExecutionPolicyException /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC
-
-** BUILD SUCCEEDED **
+Temps ‚coul‚ 00:00:02.51
 
 
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
 
-The C compiler identification is AppleClang, found in "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdC/CompilerIdC"
+The C compiler identification is MSVC, found in "C:/Users/Thierry/Desktop/General-RTOS/build/CMakeFiles/3.23.2/CompilerIdC/CompilerIdC.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler:  
@@ -99,514 +51,69 @@ Id flags:
 
 The output was:
 0
-2022-07-14 18:50:27.485 xcodebuild[11040:90382] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
-2022-07-14 18:50:27.485 xcodebuild[11040:90382] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
-Command line invocation:
-    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+Microsoft (R) Build Engine version 16.9.0+5e4b48a27 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
 
-User defaults from command line:
-    IDEPackageSupportUseBuiltinSCM = YES
+La g‚n‚ration a d‚marr‚ 2022-07-14 7:06:18 PM.
+Projet "C:\Users\Thierry\Desktop\General-RTOS\build\CMakeFiles\3.23.2\CompilerIdCXX\CompilerIdCXX.vcxproj" sur le noud 1 (cibles par d‚faut).
+PrepareForBuild:
+  Cr‚ation du r‚pertoire "Debug\".
+  Cr‚ation du r‚pertoire "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Cr‚ation de "Debug\CompilerIdCXX.tlog\unsuccessfulbuild", car "AlwaysCreate" a ‚t‚ sp‚cifi‚.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX64\x64\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\Users\Thierry\Desktop\General-RTOS\build\CMakeFiles\3.23.2\CompilerIdCXX\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\bin\Hostx64\x64\cl.exe
+FinalizeBuildStatus:
+  Suppression du fichier "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Mise … jour de l'horodatage "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+G‚n‚ration du projet "C:\Users\Thierry\Desktop\General-RTOS\build\CMakeFiles\3.23.2\CompilerIdCXX\CompilerIdCXX.vcxproj" termin‚e (cibles par d‚faut).
 
-note: Using new build system
-note: Planning
-Analyze workspace
+La g‚n‚ration a r‚ussi.
+    0 Avertissement(s)
+    0 Erreur(s)
 
-Create build description
-Build description signature: a5b56ea4f6962a1366b9b11da51a79fa
-Build description path: /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/./XCBuildData/a5b56ea4f6962a1366b9b11da51a79fa-desc.xcbuild
-
-note: Build preparation complete
-warning: Building targets in manual order is deprecated - check "Parallelize build for command-line builds" in the project editor, or set DISABLE_MANUAL_TARGET_ORDER_BUILD_WARNING in any of the targets in the current build to suppress this warning
-CreateBuildDirectory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.xcodeproj
-    builtin-create-build-directory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-
-warning: Traditional headermap style is no longer supported; please migrate to using separate headermaps and set 'ALWAYS_SEARCH_USER_PATHS' to NO. (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/all-product-headers.yaml (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/all-product-headers.yaml
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-non-framework-target-headers.hmap
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList
-
-CompileC /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    export LANG\=en_US.US-ASCII
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target arm64-apple-macos12.1 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility\=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -iquote /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap -iquote /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/include -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources-normal/arm64 -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/arm64 -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX -MMD -MT dependencies -MF /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.d --serialize-diagnostics /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.dia -c /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CMakeCXXCompilerId.o
-
-Ld /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX normal (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target arm64-apple-macos12.1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -L/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_lto.o -Xlinker -dependency_info -Xlinker /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/arm64/CompilerIdCXX_dependency_info.dat -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
-
-PhaseScriptExecution Run\ Script /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    /bin/sh -c /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
-GCC_VERSION=com.apple.compilers.llvm.clang.1_0
-ARCHS=arm64
-
-RegisterExecutionPolicyException /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX (in target 'CompilerIdCXX' from project 'CompilerIdCXX')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX
-    builtin-RegisterExecutionPolicyException /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX
-
-** BUILD SUCCEEDED **
+Temps ‚coul‚ 00:00:00.91
 
 
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
 
-The CXX compiler identification is AppleClang, found in "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/3.21.1/CompilerIdCXX/CompilerIdCXX"
+The CXX compiler identification is MSVC, found in "C:/Users/Thierry/Desktop/General-RTOS/build/CMakeFiles/3.23.2/CompilerIdCXX/CompilerIdCXX.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_49ad8 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && 2022-07-14 18:50:28.292 xcodebuild[11060:90469] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
-2022-07-14 18:50:28.292 xcodebuild[11060:90469] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
-Command line invocation:
-    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_49ad8 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_eed51.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.9.0+5e4b48a27 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.28.29915 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CMakeCCompilerABI.c
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_eed51.dir\Debug\\" /Fd"cmTC_eed51.dir\Debug\vc142.pdb" /Gd /TC /errorReport:queue "C:\Users\Thierry\Downloads\cmake-3.23.2-windows-x86_64\cmake-3.23.2-windows-x86_64\share\cmake-3.23\Modules\CMakeCCompilerABI.c"
+  cmTC_eed51.vcxproj -> C:\Users\Thierry\Desktop\General-RTOS\build\CMakeFiles\CMakeTmp\Debug\cmTC_eed51.exe
 
-User defaults from command line:
-    HideShellScriptEnvironment = YES
-    IDEPackageSupportUseBuiltinSCM = YES
-
-note: Using new build system
-note: Planning
-Analyze workspace
-
-Create build description
-Build description signature: 4d9440185d47c6247bb9d1f192f53315
-Build description path: /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/build/XCBuildData/4d9440185d47c6247bb9d1f192f53315-desc.xcbuild
-
-note: Build preparation complete
-note: Building targets in dependency order
-CreateBuildDirectory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj
-    builtin-create-build-directory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
-
-CreateBuildDirectory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj
-    builtin-create-build-directory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug
-
-CompileC /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.o /Users/thierry/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCCompilerABI.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_49ad8' from project 'CMAKE_TRY_COMPILE')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-macos12.1 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources-normal/arm64 -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources/arm64 -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -v -Wl,-v -MMD -MT dependencies -MF /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.d --serialize-diagnostics /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.dia -c /Users/thierry/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCCompilerABI.c -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.o
-Apple clang version 13.1.6 (clang-1316.0.21.2.3)
-Target: arm64-apple-macos12.1
-Thread model: posix
-InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.1.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debug-info-kind=standalone -dwarf-version=4 -debugger-tuning=lldb -target-linker-version 762 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6 -dependency-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -D "CMAKE_INTDIR=\"Debug\"" -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/include -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources-normal/arm64 -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources/arm64 -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdebug-compilation-dir=/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmacro-backtrace-limit 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.dia -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.o -x c /Users/thierry/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCCompilerABI.c
-clang -cc1 version 13.1.6 (clang-1316.0.21.2.3) default target arm64-apple-darwin21.2.0
-ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/include"
-ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources-normal/arm64"
-ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources/arm64"
-ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources"
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include"
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/Library/Frameworks"
-#include "..." search starts here:
-#include <...> search starts here:
- /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug (framework directory)
- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include
- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)
-End of search list.
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8.LinkFileList (in target 'cmTC_49ad8' from project 'CMAKE_TRY_COMPILE')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8.LinkFileList
-
-Ld /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ad8 normal (in target 'cmTC_49ad8' from project 'CMAKE_TRY_COMPILE')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target arm64-apple-macos12.1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -L/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_lto.o -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_dependency_info.dat -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ad8
-Apple clang version 13.1.6 (clang-1316.0.21.2.3)
-Target: arm64-apple-macos12.1
-Thread model: posix
-InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.1.0 12.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ad8 -L/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8.LinkFileList -object_path_lto /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug
-@(#)PROGRAM:ld  PROJECT:ld64-762
-BUILD 12:49:08 Mar 30 2022
-configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-Library search paths:
-	/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug
-	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib
-Framework search paths:
-	/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug
-	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/
-
-RegisterExecutionPolicyException /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ad8 (in target 'cmTC_49ad8' from project 'CMAKE_TRY_COMPILE')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
-    builtin-RegisterExecutionPolicyException /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ad8
-
-** BUILD SUCCEEDED **
-
-
-
-
-Parsed C implicit include dir info from above output: rv=done
-  found start of include info
-  found start of implicit include info
-    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include]
-    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
-    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-  end of search list found
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include]
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-  implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-
-
-Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_49ad8 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && 2022-07-14 18:50:28.292 xcodebuild[11060:90469] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore]
-  ignore line: [2022-07-14 18:50:28.292 xcodebuild[11060:90469] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore]
-  ignore line: [Command line invocation:]
-  ignore line: [    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_49ad8 -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
-  ignore line: []
-  ignore line: [User defaults from command line:]
-  ignore line: [    HideShellScriptEnvironment = YES]
-  ignore line: [    IDEPackageSupportUseBuiltinSCM = YES]
-  ignore line: []
-  ignore line: [note: Using new build system]
-  ignore line: [note: Planning]
-  ignore line: [Analyze workspace]
-  ignore line: []
-  ignore line: [Create build description]
-  ignore line: [Build description signature: 4d9440185d47c6247bb9d1f192f53315]
-  ignore line: [Build description path: /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/build/XCBuildData/4d9440185d47c6247bb9d1f192f53315-desc.xcbuild]
-  ignore line: []
-  ignore line: [note: Build preparation complete]
-  ignore line: [note: Building targets in dependency order]
-  ignore line: [CreateBuildDirectory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp]
-  ignore line: [    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj]
-  ignore line: [    builtin-create-build-directory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [CreateBuildDirectory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug]
-  ignore line: [    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj]
-  ignore line: [    builtin-create-build-directory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug]
-  ignore line: []
-  ignore line: [CompileC /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.o /Users/thierry/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCCompilerABI.c normal arm64 c com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_49ad8' from project 'CMAKE_TRY_COMPILE')]
-  ignore line: [    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp]
-  ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -target arm64-apple-macos12.1 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fstrict-aliasing -Wdeprecated-declarations -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources-normal/arm64 -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources/arm64 -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -v -Wl -v -MMD -MT dependencies -MF /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.d --serialize-diagnostics /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.dia -c /Users/thierry/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCCompilerABI.c -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.o]
-  ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2.3)]
-  ignore line: [Target: arm64-apple-macos12.1]
-  ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.1.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debug-info-kind=standalone -dwarf-version=4 -debugger-tuning=lldb -target-linker-version 762 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6 -dependency-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -D "CMAKE_INTDIR=\"Debug\"" -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/include -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources-normal/arm64 -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources/arm64 -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wdeprecated-declarations -Wno-sign-conversion -Wno-infinite-recursion -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdebug-compilation-dir=/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmacro-backtrace-limit 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.dia -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/CMakeCCompilerABI.o -x c /Users/thierry/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCCompilerABI.c]
-  ignore line: [clang -cc1 version 13.1.6 (clang-1316.0.21.2.3) default target arm64-apple-darwin21.2.0]
-  ignore line: [ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/include"]
-  ignore line: [ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources-normal/arm64"]
-  ignore line: [ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources/arm64"]
-  ignore line: [ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/DerivedSources"]
-  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include"]
-  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/Library/Frameworks"]
-  ignore line: [#include "..." search starts here:]
-  ignore line: [#include <...> search starts here:]
-  ignore line: [ /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug (framework directory)]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)]
-  ignore line: [End of search list.]
-  ignore line: []
-  ignore line: [WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8.LinkFileList (in target 'cmTC_49ad8' from project 'CMAKE_TRY_COMPILE')]
-  ignore line: [    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp]
-  ignore line: [    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8.LinkFileList]
-  ignore line: []
-  ignore line: [Ld /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ad8 normal (in target 'cmTC_49ad8' from project 'CMAKE_TRY_COMPILE')]
-  ignore line: [    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp]
-  ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target arm64-apple-macos12.1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -L/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_lto.o -Xlinker -no_deduplicate -v -Wl -v -Wl -search_paths_first -Wl -headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_dependency_info.dat -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ad8]
-  ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2.3)]
-  ignore line: [Target: arm64-apple-macos12.1]
-  ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-  reduced line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.1.0 12.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ad8 -L/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8.LinkFileList -object_path_lto /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug]
-            to: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.1.0 12.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ad8 -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8.LinkFileList -object_path_lto /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a ]
-  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.1.0 12.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ad8 -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8.LinkFileList -object_path_lto /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_dependency_info.dat -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a ]
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
-    arg [-demangle] ==> ignore
-    arg [-lto_library] ==> ignore, skip following value
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [arm64] ==> ignore
-    arg [-platform_version] ==> ignore
-    arg [macos] ==> ignore
-    arg [12.1.0] ==> ignore
-    arg [12.3] ==> ignore
-    arg [-syslibroot] ==> ignore
-    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk] ==> ignore
-    arg [-o] ==> ignore
-    arg [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_49ad8] ==> ignore
-    arg [-filelist] ==> ignore
-    arg [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8.LinkFileList] ==> ignore
-    arg [-object_path_lto] ==> ignore
-    arg [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_lto.o] ==> obj [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_lto.o]
-    arg [-no_deduplicate] ==> ignore
-    arg [-v] ==> ignore
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [-dependency_info] ==> ignore
-    arg [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_dependency_info.dat] ==> ignore
-    arg [-lSystem] ==> lib [System]
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
-  Library search paths: [;/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib]
-  Framework search paths: [;/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/]
-  remove lib [System]
-  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
-  collapse library dir [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug] ==> [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug], skipping non-system directory
-  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib]
-  collapse framework dir [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug] ==> [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug], skipping non-system directory
-  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
-  implicit libs: []
-  implicit objs: [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_49ad8.build/Objects-normal/arm64/cmTC_49ad8_lto.o]
-  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib]
-  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_d57ac -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && 2022-07-14 18:50:29.023 xcodebuild[11076:90543] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
-2022-07-14 18:50:29.024 xcodebuild[11076:90543] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore
-Command line invocation:
-    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_d57ac -parallelizeTargets -configuration Debug -hideShellScriptEnvironment
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_320f2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.9.0+5e4b48a27 pour .NET Framework
+Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+
+  Compilateur d'optimisation Microsoft (R) C/C++ versionÿ19.28.29915 pour x64
+  Copyright (C) Microsoft Corporation. Tous droits r‚serv‚s.
+  CMakeCXXCompilerABI.cpp
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_320f2.dir\Debug\\" /Fd"cmTC_320f2.dir\Debug\vc142.pdb" /Gd /TP /errorReport:queue "C:\Users\Thierry\Downloads\cmake-3.23.2-windows-x86_64\cmake-3.23.2-windows-x86_64\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_320f2.vcxproj -> C:\Users\Thierry\Desktop\General-RTOS\build\CMakeFiles\CMakeTmp\Debug\cmTC_320f2.exe
 
-User defaults from command line:
-    HideShellScriptEnvironment = YES
-    IDEPackageSupportUseBuiltinSCM = YES
-
-note: Using new build system
-note: Planning
-Analyze workspace
-
-Create build description
-Build description signature: 0379c2ca9cdc53d39896a6e93efcc0b5
-Build description path: /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/build/XCBuildData/0379c2ca9cdc53d39896a6e93efcc0b5-desc.xcbuild
-
-note: Build preparation complete
-note: Building targets in dependency order
-CreateBuildDirectory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj
-    builtin-create-build-directory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
-
-CreateBuildDirectory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj
-    builtin-create-build-directory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug
-
-CompileC /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.o /Users/thierry/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_d57ac' from project 'CMAKE_TRY_COMPILE')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target arm64-apple-macos12.1 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources-normal/arm64 -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources/arm64 -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -v -Wl,-v -MMD -MT dependencies -MF /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.d --serialize-diagnostics /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.dia -c /Users/thierry/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.o
-Apple clang version 13.1.6 (clang-1316.0.21.2.3)
-Target: arm64-apple-macos12.1
-Thread model: posix
-InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.1.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debug-info-kind=standalone -dwarf-version=4 -debugger-tuning=lldb -target-linker-version 762 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6 -dependency-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -D "CMAKE_INTDIR=\"Debug\"" -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/include -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources-normal/arm64 -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources/arm64 -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdeprecated-macro -fdebug-compilation-dir=/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmacro-backtrace-limit 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.dia -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.o -x c++ /Users/thierry/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp
-clang -cc1 version 13.1.6 (clang-1316.0.21.2.3) default target arm64-apple-darwin21.2.0
-ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/include"
-ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources-normal/arm64"
-ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources/arm64"
-ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources"
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include"
-ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/Library/Frameworks"
-#include "..." search starts here:
-#include <...> search starts here:
- /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug (framework directory)
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1
- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include
- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
- /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)
-End of search list.
-
-WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac.LinkFileList (in target 'cmTC_d57ac' from project 'CMAKE_TRY_COMPILE')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
-    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac.LinkFileList
-
-Ld /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_d57ac normal (in target 'cmTC_d57ac' from project 'CMAKE_TRY_COMPILE')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target arm64-apple-macos12.1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -L/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_lto.o -Xlinker -no_deduplicate -v -Wl,-v -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_dependency_info.dat -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_d57ac
-Apple clang version 13.1.6 (clang-1316.0.21.2.3)
-Target: arm64-apple-macos12.1
-Thread model: posix
-InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.1.0 12.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_d57ac -L/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac.LinkFileList -object_path_lto /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug
-@(#)PROGRAM:ld  PROJECT:ld64-762
-BUILD 12:49:08 Mar 30 2022
-configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
-Library search paths:
-	/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug
-	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib
-Framework search paths:
-	/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug
-	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/
-
-RegisterExecutionPolicyException /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_d57ac (in target 'cmTC_d57ac' from project 'CMAKE_TRY_COMPILE')
-    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp
-    builtin-RegisterExecutionPolicyException /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_d57ac
-
-** BUILD SUCCEEDED **
-
-
-
-
-Parsed CXX implicit include dir info from above output: rv=done
-  found start of include info
-  found start of implicit include info
-    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1]
-    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include]
-    add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
-    add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-  end of search list found
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1]
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include]
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
-  collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-  implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-
-
-Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_d57ac -parallelizeTargets -configuration Debug -hideShellScriptEnvironment && 2022-07-14 18:50:29.023 xcodebuild[11076:90543] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionSentinelHostApplications for extension Xcode.DebuggerFoundation.AppExtensionHosts.watchOS of plug-in com.apple.dt.IDEWatchSupportCore]
-  ignore line: [2022-07-14 18:50:29.024 xcodebuild[11076:90543] Requested but did not find extension point with identifier Xcode.IDEKit.ExtensionPointIdentifierToBundleIdentifier for extension Xcode.DebuggerFoundation.AppExtensionToBundleIdentifierMap.watchOS of plug-in com.apple.dt.IDEWatchSupportCore]
-  ignore line: [Command line invocation:]
-  ignore line: [    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project CMAKE_TRY_COMPILE.xcodeproj build -target cmTC_d57ac -parallelizeTargets -configuration Debug -hideShellScriptEnvironment]
-  ignore line: []
-  ignore line: [User defaults from command line:]
-  ignore line: [    HideShellScriptEnvironment = YES]
-  ignore line: [    IDEPackageSupportUseBuiltinSCM = YES]
-  ignore line: []
-  ignore line: [note: Using new build system]
-  ignore line: [note: Planning]
-  ignore line: [Analyze workspace]
-  ignore line: []
-  ignore line: [Create build description]
-  ignore line: [Build description signature: 0379c2ca9cdc53d39896a6e93efcc0b5]
-  ignore line: [Build description path: /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/build/XCBuildData/0379c2ca9cdc53d39896a6e93efcc0b5-desc.xcbuild]
-  ignore line: []
-  ignore line: [note: Build preparation complete]
-  ignore line: [note: Building targets in dependency order]
-  ignore line: [CreateBuildDirectory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp]
-  ignore line: [    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj]
-  ignore line: [    builtin-create-build-directory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [CreateBuildDirectory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug]
-  ignore line: [    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.xcodeproj]
-  ignore line: [    builtin-create-build-directory /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug]
-  ignore line: []
-  ignore line: [CompileC /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.o /Users/thierry/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp normal arm64 c++ com.apple.compilers.llvm.clang.1_0.compiler (in target 'cmTC_d57ac' from project 'CMAKE_TRY_COMPILE')]
-  ignore line: [    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp]
-  ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -target arm64-apple-macos12.1 -fmessage-length\=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit\=0 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DCMAKE_INTDIR\=\"Debug\" -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -g -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/include -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources-normal/arm64 -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources/arm64 -I/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -v -Wl -v -MMD -MT dependencies -MF /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.d --serialize-diagnostics /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.dia -c /Users/thierry/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.o]
-  ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2.3)]
-  ignore line: [Target: arm64-apple-macos12.1]
-  ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-  ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
-  ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx12.1.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -fno-rounding-math -munwind-tables -target-sdk-version=12.3 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +fp-armv8 -target-feature +neon -target-feature +crc -target-feature +crypto -target-feature +dotprod -target-feature +fp16fml -target-feature +ras -target-feature +lse -target-feature +rdm -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -fallow-half-arguments-and-returns -debug-info-kind=standalone -dwarf-version=4 -debugger-tuning=lldb -target-linker-version 762 -v -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6 -dependency-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.d -skip-unused-modulemap-deps -MT dependencies -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -D "CMAKE_INTDIR=\"Debug\"" -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/include -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources-normal/arm64 -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources/arm64 -I /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -stdlib=libc++ -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -O0 -Wno-trigraphs -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -Wdeprecated-declarations -Winvalid-offsetof -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -Wno-objc-load-method -fdeprecated-macro -fdebug-compilation-dir=/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmacro-backtrace-limit 0 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fpascal-strings -fmax-type-align=16 -fcommon -fdiagnostics-show-note-include-stack -serialize-diagnostic-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.dia -clang-vendor-feature=+messageToSelfInClassMethodIdReturnType -clang-vendor-feature=+disableInferNewAvailabilityFromInit -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/CMakeCXXCompilerABI.o -x c++ /Users/thierry/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.21/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [clang -cc1 version 13.1.6 (clang-1316.0.21.2.3) default target arm64-apple-darwin21.2.0]
-  ignore line: [ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/include"]
-  ignore line: [ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources-normal/arm64"]
-  ignore line: [ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources/arm64"]
-  ignore line: [ignoring nonexistent directory "/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/DerivedSources"]
-  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/local/include"]
-  ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/Library/Frameworks"]
-  ignore line: [#include "..." search starts here:]
-  ignore line: [#include <...> search starts here:]
-  ignore line: [ /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug (framework directory)]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
-  ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks (framework directory)]
-  ignore line: [End of search list.]
-  ignore line: []
-  ignore line: [WriteAuxiliaryFile /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac.LinkFileList (in target 'cmTC_d57ac' from project 'CMAKE_TRY_COMPILE')]
-  ignore line: [    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp]
-  ignore line: [    write-file /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac.LinkFileList]
-  ignore line: []
-  ignore line: [Ld /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_d57ac normal (in target 'cmTC_d57ac' from project 'CMAKE_TRY_COMPILE')]
-  ignore line: [    cd /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp]
-  ignore line: [    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -target arm64-apple-macos12.1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -L/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac.LinkFileList -Xlinker -object_path_lto -Xlinker /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_lto.o -Xlinker -no_deduplicate -v -Wl -v -Wl -search_paths_first -Wl -headerpad_max_install_names -Xlinker -dependency_info -Xlinker /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_dependency_info.dat -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_d57ac]
-  ignore line: [Apple clang version 13.1.6 (clang-1316.0.21.2.3)]
-  ignore line: [Target: arm64-apple-macos12.1]
-  ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
-  reduced line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.1.0 12.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_d57ac -L/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac.LinkFileList -object_path_lto /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a -F/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug]
-            to: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.1.0 12.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_d57ac -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac.LinkFileList -object_path_lto /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a ]
-  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 12.1.0 12.3 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -o /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_d57ac -filelist /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac.LinkFileList -object_path_lto /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_lto.o -no_deduplicate -v -search_paths_first -headerpad_max_install_names -dependency_info /Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_dependency_info.dat -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a ]
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
-    arg [-demangle] ==> ignore
-    arg [-lto_library] ==> ignore, skip following value
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [arm64] ==> ignore
-    arg [-platform_version] ==> ignore
-    arg [macos] ==> ignore
-    arg [12.1.0] ==> ignore
-    arg [12.3] ==> ignore
-    arg [-syslibroot] ==> ignore
-    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk] ==> ignore
-    arg [-o] ==> ignore
-    arg [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug/cmTC_d57ac] ==> ignore
-    arg [-filelist] ==> ignore
-    arg [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac.LinkFileList] ==> ignore
-    arg [-object_path_lto] ==> ignore
-    arg [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_lto.o] ==> obj [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_lto.o]
-    arg [-no_deduplicate] ==> ignore
-    arg [-v] ==> ignore
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [-dependency_info] ==> ignore
-    arg [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_dependency_info.dat] ==> ignore
-    arg [-lc++] ==> lib [c++]
-    arg [-lSystem] ==> lib [System]
-    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
-  Library search paths: [;/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib]
-  Framework search paths: [;/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/]
-  remove lib [System]
-  remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/lib/darwin/libclang_rt.osx.a]
-  collapse library dir [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug] ==> [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug], skipping non-system directory
-  collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib]
-  collapse framework dir [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug] ==> [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/Debug], skipping non-system directory
-  collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks/] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
-  implicit libs: [c++]
-  implicit objs: [/Users/thierry/Desktop/General-RTOS/build/CMakeFiles/CMakeTmp/CMAKE_TRY_COMPILE.build/Debug/cmTC_d57ac.build/Objects-normal/arm64/cmTC_d57ac_lto.o]
-  implicit dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/lib]
-  implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/System/Library/Frameworks]
 
 

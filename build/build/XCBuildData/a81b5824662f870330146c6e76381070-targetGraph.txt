@@ -1,7 +1,0 @@
-Target dependency graph (3 targets)
-ZERO_CHECK in MyRTOSProject, no dependencies
-grtos in MyRTOSProject, depends on:
-ZERO_CHECK in MyRTOSProject (explicit)
-app in MyRTOSProject, depends on:
-ZERO_CHECK in MyRTOSProject (explicit)
-grtos in MyRTOSProject (explicit)
