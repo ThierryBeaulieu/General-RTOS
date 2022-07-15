@@ -1,4 +1,0 @@
-C:/Users/Thierry/Desktop/General-RTOS/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Thierry/Desktop/General-RTOS/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Thierry/Desktop/General-RTOS/build/grtos/CMakeFiles/grtos.dir
-C:/Users/Thierry/Desktop/General-RTOS/build/app/CMakeFiles/app.dir
