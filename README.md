@@ -10,3 +10,8 @@ The first thing that you will want to do is to copy this repo! To do that, you c
 git clone https://github.com/ThierryBeaulieu/General-RTOS.git
 ```
 The first thing that you should know of is that this library depends on [CMake](https://cmake.org/install/). Therefore, you should make sure to have it installed. To incorporate the grtos library to a project, you could simply add the ```grtos``` folder to your files and link it using the instruction ```add_subdirectory(grtos)``` inside your CMakeLists.txt.
+
+## Structure
+
+![grtos_thierrys_version drawio](https://user-images.githubusercontent.com/46804791/208923876-aeaea3e8-e0a3-41ea-8369-c800b744fcf1.png)
+
